@@ -1,0 +1,25 @@
+{
+  "name": "entregable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss sass.scss CSS/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanma21century/repositorio_coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanma21century/repositorio_coder/issues"
+  },
+  "homepage": "https://github.com/juanma21century/repositorio_coder#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

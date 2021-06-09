@@ -1,0 +1,213 @@
+// MIXINS
+
+@mixin titulo($fsize){
+    font-size: $fsize;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+// MENU
+
+.menu{
+
+    top: 1px;
+    .menu__logo{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .menu__logo--principal{
+        width: 120px;
+        height: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+
+        position: absolute;
+        top: 5px;
+    }
+}
+
+// EFECTOS Y ANIMACIONES
+
+a:hover{
+    background-color: turquoise;
+    color: black;
+
+    border-radius: 10px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+/* PRESENTACION SERVICIOS */
+
+.presentacion{
+    margin-top: 20px;
+}
+
+/* SECCION DESTACADOS */
+
+.destacados{
+
+    margin-bottom: 10px;
+    .card{
+        border: 3px solid black;
+    }
+    .destacados__header{
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        font-size: 140%;
+        font-weight: 700;
+        margin-bottom: 2%;
+        list-style-type: none;
+        margin-left: -15%;
+    }
+    .destacados__texto{
+        font-family: 'Roboto', sans-serif;
+        margin-left: 15%;
+        list-style: none;
+    }
+    .card-body{
+        background-color: rgb(203, 209, 202);
+    }
+}
+
+
+
+
+/* preguntas index */
+
+.preguntas{
+    margin-top: 50px;
+}
+
+// TITULOS
+
+h1{
+    @include titulo(300%);
+}
+
+h2{
+    @include titulo(200px);
+}
+
+h3{
+    @include titulo(200%);
+}
+
+h4{
+    @include titulo(150%);
+}
+h5{
+    @include titulo(150%);
+}
+
+// TIPOGRAFIA
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* botones alquiler y ventas index */
+
+section .btn{
+    padding: 5%;
+    margin-bottom: 5px;
+}
+
+/* contacto.html */
+
+
+.contacto{
+    .contacto__icono{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.contactoBackground{
+    background-image: url(../imagenes/Contacto.jpg);
+    background-repeat: repeat;
+    font-weight: bolder;
+}
+
+// NOSOTROS
+
+.body__color{
+    background-color: #062404;
+}
+
+.nosotros{
+    .nosotros__titulo{
+        font-size: 2.5em;
+        color:yellow;
+    }
+    .nosotros__intro{
+        margin: 5% 12% 5%;
+        word-spacing: .2em;
+        line-height: 2em;
+        font-size: 2em;
+        color: whitesmoke;
+        text-align: justify;
+    }
+}
+
+
+// FOOTER
+
+.footer{
+    margin-top: 1%;
+    .footer__logo{
+        width: 170px;
+        height: 70px;
+        position: relative;
+        left: -20px;
+    }
+    .footer__contacto--icono{
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+}
+
+// ALQUILERES Y VENTAS
+.fondo{
+    background-image: url(../imagenes/architecture.jpg);
+    width: 100%;    
+    height: 30em;
+    .fondo__titulo{
+        color: rgb(29, 29, 29);
+        font-weight: bolder;
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 360px) {
+    .fondo{
+        background-image: url(../imagenes/architecture.jpg);
+        width: 97%;    
+        height: 20em;
+        .fondo__titulo{
+            font-size: 2em;
+        }
+    }
+
+    .nosotros{
+        .nosotros__titulo{
+            font-size: 1.5em;
+            color:yellow;
+        }
+        .nosotros__intro{
+            margin: 5% 12% 5%;
+            word-spacing: .1em;
+            line-height: 1.5em;
+            font-size: 1.5em;
+            color: whitesmoke;
+            text-align: justify;
+        }
+    }
+}
